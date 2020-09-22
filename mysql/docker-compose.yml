@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  db:
+    image: mysql
+    container_name: db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: jsyfer
+      MYSQL_PASSWORD: jsyfer
+    ports:
+      - 3306:3306
+      
+  console:
+    image: adminer
+    container_name: console
+    restart: always
+    ports:
+      - 8880:8880

@@ -1,0 +1,10 @@
+web:
+  image: nginx
+  container_name: nginx
+  volumes:
+   - ./templates:/etc/nginx/templates
+  ports:
+   - "8999:80"
+  environment:
+   - NGINX_HOST=jsyfer.com
+   - NGINX_PORT=80
