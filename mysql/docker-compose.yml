@@ -12,7 +12,8 @@ services:
       MYSQL_PASSWORD: jsyfer
     ports:
       - 3306:3306
-      
+    command:
+      --lower_case_table_names=1
   console:
     image: adminer
     container_name: console
