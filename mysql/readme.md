@@ -11,5 +11,6 @@ alter user 'root'@'%' identified with mysql_native_password by 'root';
 #创建新用户并赋予权限
 CREATE USER 'robin'@'%' IDENTIFIED BY 'sun727394';
 GRANT ALL PRIVILEGES ON *.* TO 'robin'@'%' WITH GRANT OPTION;
+alter user 'robin'@'%' identified with mysql_native_password by 'root';
 ```
 
