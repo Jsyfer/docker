@@ -9,9 +9,10 @@ select Host,User,plugin from mysql.user;
 #改变加密方式
 alter user 'root'@'%' identified with mysql_native_password by 'root';
 #创建新用户并赋予权限
-CREATE USER 'robin'@'%' IDENTIFIED BY 'sun727394';
-GRANT ALL PRIVILEGES ON *.* TO 'robin'@'%' WITH GRANT OPTION;
-alter user 'robin'@'%' identified with mysql_native_password by 'root';
+CREATE USER 'jsyfer'@'%' IDENTIFIED BY 'jsyfer';
+GRANT ALL PRIVILEGES ON *.* TO 'jsyfer'@'%' WITH GRANT OPTION;
+#设置密码
+alter user 'jsyfer'@'%' identified with mysql_native_password by 'jsyfer';
 ```
 
 tagSyetem用SQL
