@@ -7,7 +7,8 @@ CREATE TABLE IF NOT EXISTS `tbl_file` (
   `name` varchar(255) DEFAULT NULL,
   `path` varchar(255) DEFAULT NULL,
   `thumb` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY (`md5`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 
 CREATE TABLE IF NOT EXISTS `tbl_tag` (
