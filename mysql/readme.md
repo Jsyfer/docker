@@ -13,5 +13,7 @@ CREATE USER 'jsyfer'@'%' IDENTIFIED BY 'jsyfer';
 GRANT ALL PRIVILEGES ON *.* TO 'jsyfer'@'%' WITH GRANT OPTION;
 #设置密码
 alter user 'jsyfer'@'%' identified with mysql_native_password by 'jsyfer';
+#重置自增ID
+alter table file_manager_system.tbl_file auto_increment=1;
 ```
 
