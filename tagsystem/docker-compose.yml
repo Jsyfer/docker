@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  tagsystem:
+    image: tagsystem:latest
+    container_name: tagsystem
+    restart: always
+    ports:
+      - 8095:8095
+    volumes:
+      - /d:/d
+      - /e:/e
+      - /f:/f
