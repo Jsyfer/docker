@@ -19,8 +19,8 @@ CREATE TABLE IF NOT EXISTS `tbl_tag` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 
 CREATE TABLE IF NOT EXISTS `file_manager_system`.`tbl_tagtofile` (
-  `md5` VARCHAR(32) NULL,
-  `tagid` INT NULL,
+  `md5` VARCHAR(32) NOT NULL,
+  `tagid` INT NOT NULL,
   INDEX `md5_idx` (`md5` ASC) VISIBLE,
   INDEX `tagid_idx` (`tagid` ASC) VISIBLE,
   CONSTRAINT `md5`
@@ -32,4 +32,5 @@ CREATE TABLE IF NOT EXISTS `file_manager_system`.`tbl_tagtofile` (
     FOREIGN KEY (`tagid`)
     REFERENCES `file_manager_system`.`tbl_tag` (`id`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)ENGINE=InnoDB DEFAULT CHARSET=utf8
+    ON UPDATE NO ACTION,
+    PRIMARY KEY (`md5`,`tagid`))ENGINE=InnoDB DEFAULT CHARSET=utf8
