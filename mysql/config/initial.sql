@@ -15,7 +15,8 @@ CREATE TABLE IF NOT EXISTS `tbl_tag` (
   `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
   `group` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 
 CREATE TABLE IF NOT EXISTS `file_manager_system`.`tbl_tagtofile` (
