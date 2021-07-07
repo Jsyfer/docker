@@ -15,5 +15,5 @@ services:
       --lower_case_table_names=1
       --default-authentication-plugin=mysql_native_password
     volumes:
-      - /Users/robin/Documents/GitHub/docker/mysql/data:/var/lib/mysql
+      - /home/github/docker/mysql/data:/var/lib/mysql
 #      - /c/Users/Golde/Documents/GitHub/docker/mysql/data:/var/lib/mysql
