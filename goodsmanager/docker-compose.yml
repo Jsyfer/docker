@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  tagsystem:
+    image: goodsmanager:latest
+    container_name: goodsmanager
+    restart: always
+    ports:
+      - 8088:8088
