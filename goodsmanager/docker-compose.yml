@@ -6,7 +6,7 @@ services:
     container_name: goodsmanager
     restart: always
     ports:
-      - cc8088:8088
+      - 8088:8088
 networks:
  hostnet:
    external: true
