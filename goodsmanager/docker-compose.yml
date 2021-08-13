@@ -7,9 +7,3 @@ services:
     restart: always
     ports:
       - 8088:8088
-    networks:
-      hostnet: {}
-networks:
- hostnet:
-   external: true
-   name: host
