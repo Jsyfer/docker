@@ -5,6 +5,4 @@ services:
     image: goodsmanager:latest
     container_name: goodsmanager
     restart: always
-    ports:
-      - 8088
     network_mode: "host"
