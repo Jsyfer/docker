@@ -17,3 +17,11 @@ alter user 'jsyfer'@'%' identified with mysql_native_password by 'jsyfer';
 alter table file_manager_system.tbl_file auto_increment=1;
 ```
 
+configuration
+
+/etc/mysql/my.cnf
+
+/mnt/user/appdata/mysql/conf.d/my-custom.cnf
+
+Container Path: /etc/mysql/my.cnf
+
