@@ -8,6 +8,4 @@ services:
     ports:
       - 8095:8095
     volumes:
-      - /d:/d
-      - /e:/e
-      - /f:/f
+      - /mnt:/mnt

@@ -1,0 +1,18 @@
+version: "2.1"
+services:
+  qbittorrent:
+    image: ghcr.io/linuxserver/qbittorrent
+    container_name: qbittorrent
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+      - WEBUI_PORT=8005
+    volumes:
+      - /mnt/disk1/file-server/dev/GitHub/docker/qbittorrent/config:/config
+      - /mnt/disk1/media/downloads:/downloads
+    ports:
+      - 6881:6881
+      - 6881:6881/udp
+      - 8005:8005
+    restart: unless-stopped
