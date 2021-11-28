@@ -1,9 +1,3 @@
-#### image build, cd to folder contains Dockerfile, run the command bellow
-
-```shell
-sudo docker build -t goodsmanager .
-```
-
 #### run image
 
 ```text
