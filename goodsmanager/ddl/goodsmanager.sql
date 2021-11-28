@@ -1,3 +1,6 @@
+create database If Not Exists `goods_manager` default character set utf8 collate utf8_general_ci;
+use goods_manager;
+
 CREATE TABLE `tbl_goods_receive` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `RECEIVE_DATE` date DEFAULT NULL COMMENT '收购日期',
