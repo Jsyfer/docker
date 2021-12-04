@@ -1,5 +1,6 @@
 #!bin/bash
 
-docker exec aedd /usr/bin/mysqldump -u jsyfer -pjsyfer --databases goods_manager > ./test2.sql
+now=$(date +"%F %T")
+docker exec mysql /usr/bin/mysqldump -u jsyfer -pjsyfer --databases goods_manager > /home/jsyfer/goodsmanager_backup/backup_"${now}".sql
 
-# docker exec aedd /usr/bin/mysql -u jsyfer -pjsyfer < ./test2.sql
+# docker exec mysql /usr/bin/mysql -u jsyfer -pjsyfer < ./test2.sql
